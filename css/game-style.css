@@ -1,0 +1,330 @@
+/* # Regole generiche */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding-top: 16px;
+	/* font-family: 'ruddy', sans-serif; */
+	font-family: "Mountains of Christmas", serif;
+	line-height: 1;
+	color: #001732;
+	touch-action: manipulation;
+}
+
+a{
+	text-decoration: none; 
+}
+
+.adventCalendar{
+    background-image: url('/images/bg-christmas-tree.JPG');
+    background-size: cover;
+    background-attachment:fixed;
+    background-color: #008E8F;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+/* # Intestazione e Logo */
+
+header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+header img {
+	width: 112px;
+	height: 72px;
+}
+
+/* # Pannello di gioco */
+
+.game-container {
+	margin: auto;
+	width: 340px;
+	touch-action: manipulation;
+}
+
+.game-panel {
+	position: relative;
+	background-color: black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 3px;
+	padding-right: 3px;
+	border-radius: 12px;
+	border:1px solid red;
+	box-shadow: inset 0 -3px rgba(255, 255, 255, 0.5), 0 6px #a11717;
+}
+
+/* # Punteggio  */
+
+.score {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	background-color: #e8f9b5;
+	border-radius: 25px;
+	padding: 5px 30px;
+	box-shadow: 0 5px #bee15a;
+}
+
+.score-label {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 28px;
+	color: #66d00f;
+}
+
+.score-counter {
+	font-size: 24px;
+	line-height: 28px;
+}
+
+/* # Griglia di gioco */
+
+.street {
+	background-image: url('/images/bg.jpg');
+	border-radius: 20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0 25px;
+}
+
+
+.grid {
+	width: calc(40px * 7);
+	height: calc(40px * 9);
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.cell {
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 95%;
+}
+
+.debug .cell {
+	border: 1px dashed black;
+}
+
+/* # Ostacoli */
+
+.rock {
+	background-image: url('/images/rock.png');
+}
+
+.pacco {
+	background-image: url('/images/pacco2D.PNG');
+}
+
+.hero {
+	background-image: url('/images/hero.PNG');
+}
+
+.albero {
+	background-image: url('/images/albero1-2D.PNG');
+}
+
+.babbo {
+	background-image: url('/images/babbo2D.PNG');
+}
+
+.grinch {
+	background-image: url('/images/grinch.gif');
+}
+
+/* # Pannello di guida */
+
+.driving-panel {
+	height: 96px;
+	padding: 0 20px;
+	padding-top: 20px;
+
+	display: flex;
+	gap: 15px;
+	justify-content: space-between;
+}
+
+button,
+a.button {
+	padding: 10px 15px;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	letter-spacing: 1.02px;
+	text-decoration: none;
+	color: #fff;
+	/* font-family: 'ruddy', sans-serif; */
+	font-family: "Mountains of Christmas", serif;
+	font-weight: 700;
+	background-color: red;
+	/* background-color: #4c64f2; */
+	background-image: linear-gradient(to bottom, #cc2e2e, red);
+	border-radius: 16px;
+	box-shadow: inset 0 -3px rgba(255, 255, 255, 0.5), 0 6px #a11717;
+	transition: all 0.1s ease;
+	touch-action: manipulation;
+}
+
+.driving-panel button {
+	width: 80px;
+	height: calc(100% - 10px);
+}
+
+button:hover,
+a.button:hover {
+	background-image: linear-gradient(to bottom,  #ea7777, rgb(212, 65, 65));
+}
+
+button:active,
+a.button:active {
+	box-shadow: inset 0 -3px rgba(255, 255, 255, 0.5), 0 4px  #a11717;
+	transform: translateY(8px);
+}
+
+.driving-panel button img {
+	width: 90%;
+}
+
+/* # Schermata di fine gioco */
+
+.end-game-screen {
+	padding: 16px;
+	border-radius: 12px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #d9ff66;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: -6px; /* compensazione ombra tasti */
+}
+
+.end-game-text {
+	font-size: 32px;
+	line-height: 40px;
+	background: linear-gradient(to bottom, #cc2e2e, red);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	margin-bottom: 20px;
+}
+
+.end-game-screen .score {
+	font-size: 20px;
+	line-height: 32px;
+	font-weight: 700;
+	padding: 0 16px;
+	/* height: 64px; */
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	color: #66d00f;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0 10px #bee15a;
+}
+
+.final-score {
+	font-size: 4vh;
+	line-height: 4vh;
+	color: #ff3300;
+	/* font-family: 'ruddy', sans-serif; */
+	font-family: "Mountains of Christmas", serif;
+	font-weight: 700;
+}
+
+.record-score {
+	font-size: 4vh;
+	line-height: 4vh;
+	color: #ff3300;
+	/* font-family: 'ruddy', sans-serif; */
+	font-family: "Mountains of Christmas", serif;
+	font-weight: 700;
+}
+
+.character {
+	height: 180px;
+	width: auto;
+	margin-bottom: 10px;
+}
+
+.cta {
+	position: relative;
+	top: 20px;
+}
+
+.learn-code,
+.end-game-screen button {
+	display: block;
+	width: 100%;
+	align-content: center;
+
+	margin-bottom: 24px;
+	height: calc(56px - 10px);
+}
+
+.hidden {
+	display: none;
+}
+
+/* # BONUS */
+.score-counter {
+	font-size: 24px;
+	line-height: 28px;
+	color:red;
+	font-weight: 700;
+	position: relative;
+}
+
+.score-counter.bonus::after {
+	content: '+30';
+	color: rgb(153, 5, 5);
+	position: absolute;
+	font-size: 18px;
+	line-height: 24px;
+	top: 0;
+	right: 0;
+	opacity: 0;
+	animation: bonus 1s ease;
+}
+
+@keyframes bonus {
+	from {
+		top: 0;
+		opacity: 0;
+	}
+	to {
+		top: -20px;
+		opacity: 1;
+	}
+}
+
+/* # TURBO */
+
+#turbo {
+	flex-grow: 1;
+}
+
+#turbo img {
+	width: 100%;
+}

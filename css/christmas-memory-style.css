@@ -1,0 +1,169 @@
+.memory-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+.memory-record{
+    display: flex;
+    justify-content: end;
+    padding: 2vh;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 700;
+    padding: 0 16px;
+    color: #66d00f;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 10px #bee15a;
+    margin-bottom: 2vh;
+}
+
+.timer{
+    font-size: 20px;
+    padding: 0 16px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #66d00f;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 10px #bee15a;
+    margin-bottom: 1vh;
+}
+
+#play-table{
+    background-color: black;
+    border: 1px solid red;
+    max-width: 90vw;
+    touch-action: manipulation;
+    font-size: 3vh;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    box-shadow: inset 0 -5px  rgb(255, 1, 1),  0 5px 20px 0 #a11717;
+    margin-top: 2vh;
+}
+
+#play-table .row{
+    border-radius: 12px 12px 0 0;
+}
+
+
+.memory-card{
+    width: 18vw;
+    padding: 3px;
+    border: 3px solid green;
+}
+
+.memory-card-img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    opacity:  0;
+    visibility: visible;
+}
+
+.restart-button{
+    font-size: 2vh;
+}
+
+.show{
+    visibility: visible;
+    opacity: 100;
+    animation-name: rotation-icon;
+    animation-duration: .3s;
+    background-color:whitesmoke;
+    border: 1px solid #3889c4;
+    border-radius: 10px;
+}
+
+.find{
+    visibility: visible;
+    opacity: 100;
+    background-color: lightskyblue ;
+    pointer-events: none;
+    border: 1px solid #3889c4;
+    border-radius: 10px;
+}
+
+.selected{
+    pointer-events: none;
+}
+
+.fontSizeTimer{
+    font-size: 2.5vh;
+}
+
+@media screen and (min-width:665px){
+
+    #play-table{
+        background-color: black;
+        border: 2px solid red;
+        max-width: 50vw;
+        touch-action: manipulation;
+        font-size: 3vh;
+    }
+    
+    .memory-card{
+        width: 8vw;
+        padding: 3px;
+        border: 3px solid green;
+    }
+
+}
+
+@media screen and (max-width: 665px){
+    #cards-container{
+        padding-left: 0;
+        padding-right: 6vw;
+    }
+}
+
+@media  screen and (max-width: 420px) {
+    .memory-record{
+        display: flex;
+        justify-content: end;
+        padding: 2vh;
+        font-size: 4vw;
+        line-height: 32px;
+        font-weight: 700;
+        padding: 0 16px;
+        /* height: 64px; */
+        color: #66d00f;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 10px #bee15a;
+        margin-bottom: 2vh;
+        }
+        
+    .timer{
+        font-size: 4vw;
+        padding: 0 16px;
+        line-height: 32px;
+        font-weight: 700;
+        color: #66d00f;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 10px #bee15a;
+        margin-bottom: 1vh;
+        }
+    
+}
+
+@keyframes rotation-icon {
+    from {
+        transform: perspective(300px) rotate3d(0, 1, 0, 80deg);
+        animation-timing-function: ease-in;
+    }
+ 
+    50% {
+        transform: perspective(300px) rotate3d(0, 1, 0, -10deg);
+        animation-timing-function: ease-in;
+    }
+ 
+    to {
+        transform: perspective(300px);
+        animation-timing-function: ease-in;
+    }
+ }

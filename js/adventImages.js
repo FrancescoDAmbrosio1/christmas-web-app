@@ -1,0 +1,153 @@
+const images = [
+    {   "name": "immagine1",
+        "url": "/images/adventImages/1.jpg",
+        "year": 2024,
+        "month": 12,
+        "day": 1
+    },
+    {   "name": "immagine2",
+        "url": "/images/adventImages/2.jpg",
+        "year": 2024,
+        "month": 12,
+        "day": 2
+    },
+    {   "name": "immagine3",
+        "url": "/images/adventImages/3.webp",
+        "year": 2024,
+        "month": 12,
+        "day": 3
+    },
+    {   "name": "immagine4",
+        "url": "/images/adventImages/4.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 4
+    },
+    {   "name": "immagine5",
+        "url": "/images/adventImages/5.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 5
+    },
+    {   "name": "immagine6",
+        "url": "/images/adventImages/6.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 6
+    },
+    {   "name": "immagine7",
+        "url": "/images/adventImages/7.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 7
+    },
+    {   "name": "immagine8",
+        "url": "/images/adventImages/8.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 8
+    },
+    {   "name": "immagine9",
+        "url": "/images/adventImages/9.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 9
+    },
+    {   "name": "immagine10",
+        "url": "/images/adventImages/10.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 10
+    },
+    {   "name": "immagine11",
+        "url": "/images/adventImages/11.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 11
+    },
+    {   "name": "immagine12",
+        "url": "/images/adventImages/12.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 12
+    },
+    {   "name": "immagine13",
+        "url": "/images/adventImages/13.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 13
+    },
+    {   "name": "immagine14",
+        "url": "/images/adventImages/14.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 14
+    },
+    {   "name": "immagine15",
+        "url": "/images/adventImages/15.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 15
+    },
+    {   "name": "immagine16",
+        "url": "/images/adventImages/16.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 16
+    },
+    {   "name": "immagine17",
+        "url": "/images/adventImages/17.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 17
+    },
+    {   "name": "immagine18",
+        "url": "/images/adventImages/18.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 18
+    },
+    {   "name": "immagine19",
+        "url": "/images/adventImages/19.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 19
+    },
+    {   "name": "immagine20",
+        "url": "/images/adventImages/20.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 20
+    },
+    {   "name": "immagine21",
+        "url": "/images/adventImages/2221.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 21
+    },
+    {   "name": "immagine22",
+        "url": "/images/adventImages/22.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 22
+    },
+    {   "name": "immagine23",
+        "url": "/images/adventImages/23.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 23
+    },
+    {   "name": "immagine24",
+        "url": "/images/adventImages/24.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 24
+    },
+    {   "name": "immagine25",
+        "url": "/images/adventImages/25.jpeg",
+        "year": 2024,
+        "month": 12,
+        "day": 25
+    }
+
+];

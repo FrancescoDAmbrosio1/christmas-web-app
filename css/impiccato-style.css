@@ -1,0 +1,143 @@
+/* gioco dell'impiccato */
+.impiccato-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .play-table-impiccato{
+     width: 90vw;
+     height: auto;
+     background-color: black;
+     border: 1px solid red;
+     border-radius: 12px;
+     margin-top: 10%;
+     text-align: center;
+     padding: 2vh;
+     box-shadow: inset 0 -5px  rgb(255, 1, 1),  0 5px 20px 0 #a11717;
+ }
+ 
+ .impiccato-img{
+    margin-bottom: -25px;
+     width: 20vh;
+     height: auto;
+ }
+
+ .img-babbo-going{
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    margin-bottom: 2vh;
+ }
+ 
+ .words-container{
+    padding: 1vh;
+    background-color: #d9ff66;
+    border: 1px solid red;
+    border-radius: 12px;
+ }
+ 
+ .letter-impiccato-card{
+    width: 8vw;
+    padding: 1px;
+    margin: 0.5vw;
+    border: 3px solid green;
+    background-color: whitesmoke;
+    cursor: pointer;
+    font-family: "Bungee Tint", sans-serif;
+    font-weight: 900;
+    font-size: 5vw;
+ }
+ 
+ .letter-inside{
+    background-color: whitesmoke;
+    opacity: 0;
+     
+ }
+ 
+ .words-container{
+    padding: 2vh;
+    background-color: #d9ff66;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+ }
+ 
+ .alphabet-container{
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+    flex-wrap: wrap;
+    margin-top: 2vh;
+ }
+ 
+ .letter-impiccato-alphabet{
+    width: 8vw;
+    height: 8vw;
+    border: 2px solid red;
+    font-family: "Bungee Tint", sans-serif;
+    font-weight: 900;
+    font-size: 4vw;
+    color: goldenrod;
+    margin: 0.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vh;
+    cursor: pointer;
+ }
+ 
+ .unshow{
+    visibility: visible;
+    visibility: 100;
+    animation-name: rotation-icon;
+    animation-duration: .3s;
+    background-color:whitesmoke;
+ }
+ 
+ .selected{
+    visibility: visible;
+    opacity: 0;
+    pointer-events: none;
+    border: 1px solid black;
+    border-radius: 10px;
+ }
+
+ @media screen and (max-width: 400px) {
+    .impiccato-img{
+        margin-bottom: -15px;
+        width: 20vh;
+        height: auto;
+     }
+ }
+
+ @media screen and (min-width: 1000px){
+
+    .play-table-impiccato{
+        width: 70vw;
+        height: auto;
+        background-color: black;
+        border: 1px solid red;
+        border-radius: 12px;
+        margin-top: 10%;
+        text-align: center;
+        padding: 2vh;
+        box-shadow: inset 0 -5px  rgb(255, 1, 1),  0 5px 20px 0 #a11717;
+    }
+ }
+
+ @media screen and (min-width: 1250px){
+
+    .play-table-impiccato{
+        width: 60vw;
+        height: auto;
+        background-color: black;
+        border: 1px solid red;
+        border-radius: 12px;
+        margin-top: 10%;
+        text-align: center;
+        padding: 2vh;
+        box-shadow: inset 0 -5px  rgb(255, 1, 1),  0 5px 20px 0 #a11717;
+    }
+ }

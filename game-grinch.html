@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Francesco D'Ambrosio" />
+  <title>Merry Christmas</title>
+ 
+  <!-- Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+
+ 
+  <!-- Icona -->
+  <link rel="icon" href="./images/Icona-babbo-play.PNG" type="image/png">
+  <link rel="apple-touch-icon" href="./images/Icona-babbo-play.PNG">
+
+  <!-- Foglio di stile -->
+  <link rel="stylesheet" href="./css/game-style.css">
+
+</head>
+
+<body class="adventCalendar">
+  <div class="game-container">
+    <!-- Logo -->
+    <header id="header-grinch-race">
+      <img src="./images/grin-race-logo.webp" alt="logo di gioco">
+    </header>
+
+    <!-- Pannello informazioni di gioco -->
+    <div class="game-panel">
+      <!-- Punteggio -->
+      <div class="score">
+        <span class="score-label">SCORE</span>
+        <span class="score-counter">0</span>
+      </div>
+
+
+      <!-- Tabellone di gioco -->
+      <div class="game-board">
+        <div class="street">
+          <div class="grid"></div>
+        </div>
+      <!-- Pannello di gioco -->
+        <div class="driving-panel">
+          <button class="left-button">
+            <img src="./images/left-arrow.png" alt="left arrow">
+          </button>
+          <button id="turbo">
+            <img src="./images/gauge-1.png" alt="turbo gauge">
+          </button>
+          <button class="right-button">
+            <img src="./images/right-arrow.png" alt="right arrow"></img>
+          </button>
+        </div>
+
+        <!-- Schermata di fine gioco -->
+        <div class="end-game-screen hidden">
+          <h2 class="end-game-text">Game Over</h2>
+          <div class="score">YOUR RECORD: <span id="grinch-race-record" class="record-score">0</span></div>
+          <div class="score">SCORE: <span class="final-score">0</span></div>
+          <div class="cta">
+
+            <img class="character" src="./images/grinch-end-game.PNG" alt="grinch on the sofa">
+            <button class="play-again">Gioca ancora</button>
+            <a href="./index.html"><button class="button">Esci dal gioco</button></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="./js/game-script.js"></script>
+  
+
+</body>
+
+</html>

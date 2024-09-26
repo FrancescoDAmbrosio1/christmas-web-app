@@ -1,0 +1,512 @@
+/* Colori --> background-color: #d9ff66; */
+
+/* # Regole generiche */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#home-logo img{
+    min-width: 70px;
+    max-width: 8vw;
+}
+
+#navbar-text{
+    font-size: 5vw;
+}
+
+.adventCalendar{
+    background-image: url('/images/bg-christmas-tree.JPG');
+    background-size: cover;
+    background-attachment:fixed;
+    background-color: #008E8F;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#christmas-tree-bg{
+    background-image: url('/images/bg-christmas-tree.JPG');
+    background-size: cover;
+    background-attachment: fixed;   
+    background-color: #008E8F;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+header *{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.navbarCustom{
+    margin-top: 5px;
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;    
+    border-bottom: 1px solid lightgray;
+    z-index: 0;
+}
+
+
+ul{
+    list-style-type: none;
+    padding-left: 0rem;
+}
+
+li{
+    padding-bottom: 15px;
+}
+
+a, div a{
+    text-decoration: none; 
+} 
+
+.building{
+    border: 3px solid red;
+    border-radius: 10px;
+    width: 85vw;
+    height: 30vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.building-img{
+    max-width: 20vh;
+    height: auto;
+}
+
+#container-text-home{
+    font-weight:900;
+    background-image: linear-gradient(to bottom, #068c8cac, rgba(255, 255, 255, 0.2) ,#068c8cac );
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+/* Buttons */
+.button {
+	padding: 8px 13px;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	letter-spacing: 1.02px;
+	text-decoration: none;
+	color: #fff;
+	/* font-family: 'ruddy', sans-serif; */
+	font-family: "Mountains of Christmas", serif;
+	font-weight: 700;
+	background-color: red;
+	/* background-color: #4c64f2; */
+	background-image: linear-gradient(to bottom, #cc2e2e, red);
+	border-radius: 16px;
+	box-shadow: inset 0 -3px rgba(255, 255, 255, 0.5), 0 6px #a11717;
+	transition: all 0.1s ease;
+	touch-action: manipulation;
+}
+
+
+.button:hover {
+	background-image: linear-gradient(to bottom,  #ea7777, rgb(212, 65, 65));
+}
+
+.button:active {
+	box-shadow: inset 0 -3px rgba(255, 255, 255, 0.5), 0 4px  #a11717;
+	transform: translateY(8px);
+}
+
+
+
+/* Font */
+
+.fontCustom{
+    font-family: "Mountains of Christmas", serif;
+}
+
+.fontCustomColorGreenGrinch{
+    color:  #d9ff66;
+}
+
+.fontCustomColorRed{
+    color: red;
+}
+
+.fontCustomColorDarkGrinch{
+    color: #66d00f;
+}
+
+.bungee {
+    font-family: "Bungee Tint", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    color: goldenrod;
+}
+  
+.text-index{
+    font-size: 4vw;
+}
+
+/* Backgrounds */
+.bgCustomGreenGrinch{
+    background-color: #d9ff66;
+}
+
+.bgCustomBlack{
+    background-color: black;
+}
+
+.bgCustomGreenDarkGrinch{
+    background-color: #66d00f;
+}
+
+/* footer */
+.footer{
+    font-size: 2vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 1vh;
+}
+
+.dati-personali{
+    color:grey;
+    font-size: 1.2vh;
+}
+
+/* Advent Calendar */
+.adventCard{
+    border: solid red;
+}
+
+.box-opened{
+    opacity: 0.2;
+    color: #041626;
+}
+
+/* Christmas letter */
+.form-box{
+    position: relative;
+    max-width: 80%;
+    border: 1px solid red;
+    border-radius: 12px;
+    background-color: #d9ff66;
+    margin: auto;
+}
+
+
+/* Icone */
+#iconaMenu{
+    width: 5vh;
+    height: auto;
+}
+
+/* Modale */
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-box{
+    min-width: 320px;
+    max-width: 80%;
+    min-height: 320px;
+    max-height: 80%;
+    background-color: #d9ff66;
+    border-radius: 12px;
+    border: solid lightgray 1px;
+    padding: 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 5;
+
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+.modal-box-preview{
+    /* min-width: 320px; */
+    /* width: 80vw; */
+    /* height: auto; */
+    max-width: 90%;
+    /* min-height: 320px; */
+    max-height: 80%;
+    background-color: #d9ff66;
+    border-radius: 12px;
+    border: solid lightgray 1px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 6;
+
+    transform: scale(1);
+    transition: transform 0.5s; 
+}
+
+.modal-hidden{
+    visibility: hidden;
+}
+
+.modal-content{
+    margin-bottom: 10px;
+}
+
+.modal-content *{
+    max-width: 100%;
+    max-height: 400px;
+}
+.modal-hidden .modal-box {
+    transform: scale(0);
+  }
+
+/* Counting */
+
+#counting-container{
+    border: 1px solid red;
+    border-radius: 12px;
+    max-width: 90%;
+    box-shadow: inset 0 -5px  rgb(255, 1, 1),  0 5px 20px 0 #a11717;
+}
+
+#counting-image{
+    max-width: 100%;
+}
+
+#counting-container .row{
+    border-radius: 0 0 12px 12px;
+}
+
+.counting-text{
+    font-size: 4vw;
+}
+
+.counting-number{
+    font-size: 8vw;
+}
+
+/* scrolling menu home */
+#scrollmenu-container{
+  max-width: 90%; 
+  margin-top: 20px;
+  margin-bottom: 20px; 
+}
+
+div.scrollmenu {
+    overflow: auto;
+    flex-wrap: nowrap;
+    background-color: white;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+}
+.scrollmenu .col{
+    border-left: solid 1px rgba(127, 120, 120, 0.5);
+    scrollbar-color:red;
+    padding: 2px;
+}
+.image-scrollmenu{
+    width: 180px;
+    background-color: white;
+}
+
+/* letterina di babbo natale */
+    
+.letter-box{
+    
+    background-color: white;
+    background-image: url('/images/letterina-sfondo-bottom.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 2px solid red;
+    border-radius: 8px;
+    width: 90vw;
+    min-height: 60vh;
+    padding-top: 4vh;
+}
+
+.letter-sender{
+    font-size: 1.5vh;
+    line-height: 1vh;
+}
+
+.letter-text{
+    text-align: center;
+    font-size: 1.5vh;
+    margin-top: 3vh;
+}
+
+
+
+#image-letter{
+    max-width: 90vw;
+}
+
+
+
+
+/* Media Query */
+
+@media screen and (min-width:576px)
+{
+    .letter-text{
+        text-align: center;
+        font-size: 1.5vh;
+        margin-top: 5vh;
+        padding-left: 2vw;
+    }
+}
+
+@media screen and (min-width:768px)
+{
+    .adventCalendar{
+        background-image: url('/images/background-more768px.jpg');
+        background-size: 100%;
+        background-attachment: fixed;
+        background-color: #041626;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+
+    .letter-box{
+        background-color: white;
+        background-image: url('/images/letterina-sfondo-bottom.png');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border: 2px solid red;
+        border-radius: 8px;
+        width: 70vw;
+        height: 200px;
+        padding-top: 4vh;
+    }
+
+}
+
+@media screen and (max-width: 450px)
+{
+    #navbar-text{
+        font-size: 4.5vw;
+    }
+
+}
+
+@media screen and (max-height:430px)
+{
+    #adventCalendar{
+        background-image: url('/images/background-more768px.jpg');
+        background-size: 100%;
+        background-attachment: fixed;
+        background-color: #041626;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .letter-box{
+        background-color: white;
+        background-image: url('/images/letterina-sfondo-bottom.png');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border: 2px solid red;
+        border-radius: 8px;
+        max-width: 45vw;
+        max-height: 60vh;
+        padding-top: 4vh;
+    }
+   
+
+    .button {
+        padding: 10px 15px;
+        font-size: 9px;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        letter-spacing: 1.02px;
+        text-decoration: none;
+        color: #fff;
+        /* font-family: 'ruddy', sans-serif; */
+        font-family: "Mountains of Christmas", serif;
+        font-weight: 700;
+        background-color: red;
+        /* background-color: #4c64f2; */
+        background-image: linear-gradient(to bottom, #cc2e2e, red);
+        border-radius: 16px;
+        box-shadow: inset 0 -3px rgba(255, 255, 255, 0.5), 0 6px #a11717;
+        transition: all 0.1s ease;
+        touch-action: manipulation;
+    }
+}
+
+@media screen and (min-width:665px)
+{
+    #christmas-index-page{
+        background-image: url('/images/Christmas-Landscape-In-Snow-Graphic.png');
+        background-size: 100%;
+        background-attachment: fixed;
+        /* background-color:  #60688A; */
+        background-color: #555D7F;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+}
+
+@media screen and (max-width: 370px){
+    .bungee {
+        font-family: "Bungee Tint", sans-serif;
+        font-weight: 900;
+        font-size: 9vw;
+        color: goldenrod;
+    }
+    .button {
+        padding: 1.5vh 2.2vh;
+        font-size: 1.7vh;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        letter-spacing: 1.02px;
+        text-decoration: none;
+        color: #fff;
+        font-family: "Mountains of Christmas", serif;
+        font-weight: 700;
+        background-color: red;
+        background-image: linear-gradient(to bottom, #cc2e2e, red);
+        border-radius: 12px;
+        box-shadow: inset 0 -3px rgba(255, 255, 255, 0.5), 0 6px #a11717;
+        transition: all 0.1s ease;
+        touch-action: manipulation;
+    }
+
+} 
+
+
